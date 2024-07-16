@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foody_Recipes</title>
+    <link rel = "stylesheet" href = "script.css">
+</head>
+<body>
+    <header id="header"> Recipes
+        <div id="recipe-menu"> &#x2630;</div>
+        <div class="search-bar">
+          <input class="inputer" type="text" placeholder="Search..">
+      </div>
+        <div class="list-container">
+            <ul id="recipes"></ul>
+        </div>
+    </header>
+    <div class="container" style="float:right">
+        <form class="add-recipe">
+          <h3 class="header">Add a recipe!</h3>
+  
+          <input
+            type="text"
+            name="name"
+            value=""
+            placeholder="Enter the recipe's name..."
+            class="input-name"
+          />
+          <br />
+          <input
+            type="text"
+            name="image"
+            value=""
+            placeholder="Enter a recipe's image URL..."
+            class="input-img"
+          />
+          <br />
+          <input
+            type="text"
+            name="instruction"
+            value=""
+            placeholder="Enter the recipe's instructions..."
+            class="input-ins"
+          />
+          <br />
+          <input
+            type="text"
+            name="ingredients"
+            value=""
+            placeholder="Enter the recipe's ingredients..."
+            class="input-ing"
+          />
+          <br />
+          <input
+            type="submit"
+            name="submit"
+            value="Create recipe"
+            class="submit"
+          />
+        </form>
+      </div>
+      <div class="recipe-container"></div>
+
+    <script src = "/script.js" defer></script>
+</body>
+</html>
