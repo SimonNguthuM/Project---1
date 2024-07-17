@@ -61,6 +61,16 @@ body {
     padding: 8px;
 }
 
+.buttons {  
+    display: flex;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5); 
+    justify-content: space-between;
+    width: 34rem;
+    padding: 10px;
+    gap: 30px;
+} 
+
 .list-container{
     position: absolute;
 }
