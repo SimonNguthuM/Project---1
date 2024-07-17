@@ -29,6 +29,7 @@ body {
 .input-ins {
     height: 100px;
     width: 700px;
+    text-align: left;
 }
 
 .input-ing {

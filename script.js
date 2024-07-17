@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
+     
     fetch('http://localhost:3000/food')
     .then(res => res.json())
-    .then(data =>print(data[0]))
+    .then(data => print(data[0]))
     .catch(error => console.error('Error:', error))
 
 
@@ -63,6 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `
             toggleButtons()
         })
+        
         function toggleButtons () {
             if (buttons.style.display === 'none') {
                 buttons.style.display = 'block'
@@ -162,8 +164,8 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault()
         const name = form.querySelector('input[name="name"]').value
         const image = form.querySelector('input[name="image"]').value
-        const instruction = form.querySelector('input[name="instruction"]').value
-        const ingredients = form.querySelector('input[name="ingredients"]').value.split('  ').map(ingredient => ingredient.trim())
+        const instruction = form.querySelector('textarea[name="instruction"]').value
+        const ingredients = form.querySelector('textarea[name="ingredients"]').value.split('\n').map(ingredient => ingredient.trim())
 
         fetch("http://localhost:3000/food", {
             method:'POST',
@@ -174,7 +176,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             body: JSON.stringify({
                 name: name,
-                instruction: instruction,
+                instructions: instruction,
                 image: image,
                 ingredients: ingredients
               })
