@@ -33,6 +33,12 @@ document.addEventListener('DOMContentLoaded', () => {
         container.style.display = (container.style.display === 'none') ? 'block' : 'none'
     })
 
+    document.addEventListener('click', (e) => {
+        if (!container.contains(e.target) && e.target !== menu) {
+            container.style.display = 'none'
+        }
+    })
+
     function print (obj){
         const div2 = document.querySelector('.recipe-container')
         const ingredientsList = obj.ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')
@@ -207,19 +213,40 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     
+    const insertion = document.querySelector('.inputer')
+    insertion.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter'){
+        e.preventDefault()
+        const searchTerm = insertion.value.toLowerCase().trim()
+        console.log(searchTerm)
+        if(searchTerm !== ''){
+        fetch('http://localhost:3000/food')
+        .then(res => res.json())
+        .then(data => data.forEach(recipe => {
+            if (recipe.ingredients.some(ingredient => ingredient.toLowerCase().includes(searchTerm))) {
+                searchList(recipe);
+            }
+        }))
+        insertion.value = ''
+        
+    }
+    }
+    })  
 
-
-    // const insertion = document.querySelector('.inputer')
-    // insertion.addEventListener('input', () => {
-    //     const searchTerm = searchInput.value.toLowerCase().trim()
-
-    //     fetch('http://localhost:3000/food')
-    //     .then(res => res.json())
-    //     .then(data => data.forEach(recipe => {
-    //         if (recipe.ingredients.some(ingredient => ingredient.toLowerCase().includes(searchTerm))) {
-    //             printList(recipe);
-    //         }
-    //     }))
-    // })       
+    function searchList(obj){
+        const li = document.createElement('li')
+        const sList = document.querySelector('.s-list')
+        li.classList.add('search-list')
+        li.innerText = `${obj.name}`
+        sList.appendChild(li)
+        li.addEventListener('click', () => {
+            fetch (`http://localhost:3000/food/${obj.id}`)
+            .then(res => res.json())
+            .then(data => {
+                sList.innerHTML = ''    
+                print(data)
+            })
+        })
+     }     
     }
 )

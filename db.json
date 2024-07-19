@@ -125,26 +125,8 @@
       ]
     },
     {
-      "id": "0e4a",
-      "name": "",
-      "instruction": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
-      "image": "",
-      "ingredients": [
-        ""
-      ]
-    },
-    {
-      "id": "bda3",
-      "name": "",
-      "instruction": "",
-      "image": "",
-      "ingredients": [
-        ""
-      ]
-    },
-    {
       "id": "a302",
-      "name": "Easy fried rice: key ingredients",
+      "name": "Easy fried rice",
       "instructions": "Cook the rice in a large saucepan of boiling water for 12 minutes or until tender. Drain and leave to cool.\nHeat oil in non-stick wok or large frying pan over medium heat. Add eggs. Swirl over base to form an omelette. Cook for 2 minutes or until set. Transfer to a chopping board. Set aside to cool slightly. Roll up and thickly slice.\nAdd bacon to wok. Cook 4 minutes until light golden. Add carrot. Stir fry 1 minute. Add shallots, peas and rice. Cook, stirring, 3-4 minutes. Add egg and soy sauce. Stir until heated through. Sprinkle with sesame seeds and top with extra shallots. Serve immediately.",
       "image": "https://img.taste.com.au/8bwMRvfG/w643-h428-cfill-q90/taste/2016/11/easy-fried-rice-187086-1.jpg",
       "ingredients": [
@@ -158,6 +140,29 @@
         "1 tbsp soy sauce",
         "Sesame seeds, to serve",
         "Shallots, sliced, extra, to serve"
+      ]
+    },
+    {
+      "id": "87a6",
+      "name": "Korean Dumplings",
+      "instructions": "Add the ground pork to a large skillet and cook over medium high heat for 1 minute, stirring with a wooden spoon.\nAdd garlic, ginger, soy sauce, and ground black pepper one by one. Keep stirring and cooking until the pork is cooked thoroughly, about 3 to 4 minutes.\nRemove from the heat and stir in 1 teaspoon sesame oil. Transfer to a large bowl.\nCombine the zucchini, onion, and salt in a bowl. Mix them well and set aside for 10 minutes.",
+      "image": "https://www.maangchi.com/wp-content/uploads/2008/05/mandu-insta.jpg",
+      "ingredients": [
+        "80 regular size mandu skins (or make homemade mandu skins)",
+        "1 pound pork belly (or pork shoulder), ground",
+        "4 garlic cloves, minced",
+        "1 teaspoon peeled ginger, minced",
+        "1 tablespoon soy sauce",
+        "1 teaspoon ground black pepper",
+        "1 tablespoon toasted sesame oil",
+        "1 pound zucchini (or any tender green squash), cut into matchsticks",
+        "1 medium sized onion (about 5 ounces), chopped",
+        "1 teaspoon kosher salt",
+        "1 teaspoon cooking oil",
+        "2 ounces dangmyeon (sweet potato starch noodles)",
+        "4 ounces buchu (Asian chives), chopped",
+        "12 to 14 ounces of mung bean sprouts",
+        "1 pound medium or firm tofu"
       ]
     }
   ]
